@@ -44,12 +44,8 @@ repository.
 
 <table>
 <tr>
-<td width="50%"><img src="docs/screenshots/timeline-diff.png" alt="Timeline with a snapshot open and a HEAD-to-snapshot diff" /></td>
-<td width="50%"><img src="docs/screenshots/recovery.png" alt="Recovery workspace with the six recovery phases" /></td>
-</tr>
-<tr>
-<td><img src="docs/screenshots/worktrees.png" alt="Worktree inventory with diagnoses" /></td>
-<td><img src="docs/screenshots/risks.png" alt="Risk Observatory with evidence" /></td>
+<td width="50%"><img src="docs/screenshots/timeline.png" alt="Timeline of snapshots and Git events with a snapshot open in the inspector" /></td>
+<td width="50%"><img src="docs/screenshots/worktrees.png" alt="Worktree inventory with a moved worktree diagnosed from evidence" /></td>
 </tr>
 </table>
 

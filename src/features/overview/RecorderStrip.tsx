@@ -48,7 +48,8 @@ export function RecorderStrip({
     const step = span <= 2 * HOUR ? 10 * 60_000 : span <= 30 * HOUR ? 3 * HOUR : 24 * HOUR;
     const offset = new Date().getTimezoneOffset() * 60_000;
     const first = Math.ceil((start - offset) / step) * step + offset;
-    for (let at = first; at < end; at += step) {
+    // Leave room for the "now" marker at the right edge.
+    for (let at = first; at < end - span * 0.05; at += step) {
       const midnight = new Date(at).getHours() === 0;
       ticks.push({
         at,

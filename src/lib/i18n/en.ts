@@ -108,6 +108,7 @@ export const en = {
   "facts.lastChange": "Last change seen",
   "facts.lastProtected": "Captured as of",
   "facts.lastSeen": "Last reachable",
+  "facts.lastObserved": "Still observed",
   "facts.lastChecked": "Last checked",
   "facts.time": "Time",
   "facts.worktree": "Worktree",

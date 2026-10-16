@@ -1,5 +1,6 @@
 import clsx from "clsx";
 import { lazy, Suspense, useEffect, useMemo, useState } from "react";
+import { createPortal } from "react-dom";
 import { useQuery } from "@tanstack/react-query";
 import { Columns2, LifeBuoy, Rows2, X } from "lucide-react";
 import { useI18n } from "../../lib/i18n";
@@ -74,7 +75,8 @@ export function DiffDialog({
   const binary = sides.original.data?.binary || sides.modified.data?.binary || f.binary;
   const captured = f.wtState === "present" && !!f.wtBlob;
 
-  return (
+  // Portal: ancestors with backdrop-filter would otherwise trap position: fixed.
+  return createPortal(
     <div className="diff-overlay" role="dialog" aria-modal="true" aria-label={t("diff.title")}>
       <div className="diff-window">
         <header className="diff-head">
@@ -190,6 +192,7 @@ export function DiffDialog({
           </section>
         </div>
       </div>
-    </div>
+    </div>,
+    document.body,
   );
 }

@@ -841,8 +841,7 @@ details.tech pre {
   text-overflow: ellipsis;
   flex-shrink: 1;
   min-width: 0;
-  direction: rtl;
-  text-align: left;
+  white-space: nowrap;
 }
 .fn-base {
   color: var(--text);

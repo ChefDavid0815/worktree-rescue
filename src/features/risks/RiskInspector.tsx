@@ -98,7 +98,7 @@ export function RiskInspector({ project, riskId }: { project: Project; riskId: s
       <dl className="facts">
         <dt>{t("facts.detected")}</dt>
         <dd className="mono">{formatDateTime(r.detectedAt, locale)}</dd>
-        <dt>{t("facts.lastSeen")}</dt>
+        <dt>{t("facts.lastObserved")}</dt>
         <dd>{formatRelative(r.lastSeenAt, locale)}</dd>
         {r.worktreePath && (
           <>

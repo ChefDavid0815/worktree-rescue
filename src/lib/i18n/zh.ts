@@ -105,6 +105,7 @@ export const zh: Record<keyof typeof en, string> = {
   "facts.lastChange": "最近一次改动",
   "facts.lastProtected": "已捕获至",
   "facts.lastSeen": "最后可访问",
+  "facts.lastObserved": "最近一次仍观察到",
   "facts.lastChecked": "最近检查",
   "facts.time": "时间",
   "facts.worktree": "工作树",
