@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <title>Worktree Rescue</title>
+  <defs>
+    <linearGradient id="tile" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0" stop-color="#1E2836"/>
+      <stop offset="1" stop-color="#0A0E15"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8BEAF2"/>
+      <stop offset="1" stop-color="#36AFC2"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.61" cy="0.375" r="0.32">
+      <stop offset="0" stop-color="#5CD0DC" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#5CD0DC" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect x="64" y="64" width="896" height="896" rx="208" fill="url(#tile)"/>
+  <rect x="64" y="64" width="896" height="896" rx="208" fill="url(#glow)"/>
+  <rect x="65.5" y="65.5" width="893" height="893" rx="206.5" fill="none" stroke="#FFFFFF" stroke-opacity="0.09" stroke-width="3"/>
+  <g fill="none" stroke="#C7D2DE" stroke-width="64" stroke-linecap="round">
+    <path d="M400 800 V300"/>
+    <path d="M400 652 C400 528 624 560 624 432"/>
+  </g>
+  <circle cx="400" cy="272" r="70" fill="#C7D2DE"/>
+  <circle cx="624" cy="384" r="62" fill="#5CD0DC"/>
+  <circle cx="624" cy="384" r="134" fill="none" stroke="url(#ring)" stroke-width="38" stroke-linecap="round"
+          stroke-dasharray="682 160" stroke-dashoffset="560"/>
+</svg>

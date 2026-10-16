@@ -1,0 +1,29 @@
+[package]
+name = "wr-core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Core snapshot, worktree and recovery engine for Worktree Rescue"
+
+[dependencies]
+chrono = { version = "0.4.45", features = ["serde"] }
+dirs = "7.0.0"
+dunce = "1.0.5"
+fs4 = "1.1.0"
+globset = "0.4.20"
+hex = "0.4.3"
+log = "0.4.34"
+rusqlite = { version = "0.40.2", features = ["bundled"] }
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0.154"
+sha1 = "0.11.0"
+sha2 = "0.11.1"
+thiserror = "2.0.21"
+uuid = { version = "1.28.0", features = ["v4", "v7", "serde"] }
+wait-timeout = "0.2.1"
+
+[dev-dependencies]
+tempfile = "3.27.0"
+
+[target."cfg(windows)".dependencies]
+windows-sys = { version = "0.61.2", features = ["Win32_Storage_FileSystem", "Win32_Foundation", "Win32_System_Threading"] }

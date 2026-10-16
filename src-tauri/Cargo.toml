@@ -1,0 +1,28 @@
+[package]
+name = "worktree-rescue"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Worktree Rescue desktop application"
+default-run = "worktree-rescue"
+
+[lib]
+name = "worktree_rescue_lib"
+crate-type = ["rlib"]
+
+[dependencies]
+log = "0.4.34"
+notify = "8.2.0"
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0.154"
+simplelog = "0.12.2"
+tauri = { version = "2.12.4", features = [] }
+tauri-plugin-dialog = "2.8.3"
+tauri-plugin-notification = "2.7.0"
+tauri-plugin-opener = "2.7.2"
+tauri-plugin-single-instance = "2.5.4"
+uuid = { version = "1.28.0", features = ["v4"] }
+wr-core = { path = "../crates/wr-core" }
+
+[build-dependencies]
+tauri-build = { version = "2.7.3", features = [] }
