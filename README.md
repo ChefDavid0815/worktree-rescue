@@ -67,7 +67,7 @@ repository.
 
 ## Install
 
-1. Download `Worktree Rescue_1.0.0_x64-setup.exe` from the
+1. Download `WorktreeRescue_1.0.0_x64-setup.exe` from the
    [latest release](https://github.com/ChefDavid0815/worktree-rescue/releases/latest).
 2. Run it. It installs for the current user and needs no administrator rights.
    The build is not code-signed yet, so SmartScreen may ask you to confirm

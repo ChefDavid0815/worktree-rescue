@@ -35,7 +35,7 @@ Git 保存历史；**Worktree Rescue 保存那些从未进入历史的内容**�
 
 ## 安装
 
-1. 从 [最新版本](https://github.com/ChefDavid0815/worktree-rescue/releases/latest) 下载 `Worktree Rescue_1.0.0_x64-setup.exe`。
+1. 从 [最新版本](https://github.com/ChefDavid0815/worktree-rescue/releases/latest) 下载 `WorktreeRescue_1.0.0_x64-setup.exe`。
 2. 运行安装程序。它为当前用户安装，无需管理员权限。此版本尚未代码签名，SmartScreen 可能会要求确认（“更多信息 → 仍要运行”）。
 
 **系统要求：** Windows 10 21H2 或 Windows 11（x64）、Microsoft Edge WebView2（Windows 11 已预装）、`PATH` 中有 Git 2.31 或更新版本。
